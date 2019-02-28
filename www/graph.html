@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="//www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="//www.amcharts.com/lib/3/serial.js"></script>
+    <script src="//www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="http://dygraphs.com/2.1.0/dygraph.min.js"></script>
+    <script>
+      loadJSON = function(url) {
+        // create the request
+        if (window.XMLHttpRequest) {
+          // IE7+, Firefox, Chrome, Opera, Safari
+          var request = new XMLHttpRequest();
+        } else {
+          // code for IE6, IE5
+          var request = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+        // load it
+        // the last "false" parameter ensures that our code will wait before the
+        // data is loaded
+        request.open('GET', url, false);
+        request.send();
+
+        // parse and return the output
+        return request.responseText;
+      };
+      var chartData = loadJSON('data.php');
+    </script>
+
+  </head>
+  <body>
+    <div id="graphdiv2"
+      style="width:500px; height:300px;"></div>
+    <script type="text/javascript">
+      g2 = new Dygraph(
+        document.getElementById("graphdiv2"),
+        "temperatures.csv", // path to CSV file
+        {}          // options
+      );
+    </script>
+  </body>
+</html>

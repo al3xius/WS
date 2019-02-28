@@ -1,0 +1,93 @@
+/*Sub Menu CSS*/
+.header{
+    background-color: #2a2a2a;
+    color: white;
+    font-family: "Calibri";
+    font-size: 40px;
+    text-align: left;
+    display: inline-block;
+    font-size: 26px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#current-item{
+  font-weight: 700;
+  color: #3191E5;
+}
+
+#header-list{
+  display: inline;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+li{
+  display: inline;
+  padding: 10px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #3191E5;
+}
+
+#logo{
+  padding-left: 15px;
+}
+
+#logo:hover{
+  color: white;
+}
+
+.footer{
+  font-family: "Calibri";
+  font-weight: 500;
+  background-color: #efefef;
+  position:static;
+  bottom:0;
+  height:45px;
+  width: 100%;
+}
+
+p{
+  text-align: center;
+}
+
+.output{
+  position: static;
+  top: 25%;
+  left: 55%;
+}
+
+.output1{
+  position: static;
+  top: 60%;
+  left: 55%;
+}
+
+.output:hover{
+  color: #2a2a2a;
+}
+
+#output-text, #time-text{
+  text-align:left;
+  font-family: "Calibri";
+  font-weight: 600;
+  font-size: 40px;
+  color: #2a2a2a
+}
+
+#time-text{
+  font-weight: 700;
+  font-size: 80px;
+}

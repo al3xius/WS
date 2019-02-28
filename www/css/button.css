@@ -1,0 +1,27 @@
+.buttons{
+  position: relative;
+  top: 120px;
+  left: 105px;
+}
+
+#temp-button, #moist-button, #press-button{
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Calibri";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#temp-button{
+  background-color: #3191E5;
+}
+
+#temp-button:hover, #moist-button:hover, #press-button:hover{
+  background-color: #3191E5;
+}

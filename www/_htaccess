@@ -1,0 +1,14 @@
+DirectoryIndex dashboard.php
+
+<Directory "/www/htdocs">
+    AllowOverride All
+</Directory>
+
+<Location "/">
+    Options +IncludesNoExec -ExecCGI
+</Location>
+
+<Directory "/var/www/cgi-bin/">
+	Options +ExecCGI
+	SetHandler cgi-script
+</Directory>
